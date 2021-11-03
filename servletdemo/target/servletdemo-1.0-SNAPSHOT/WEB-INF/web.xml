@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <display-name>servletdemo</display-name>
+    <welcome-file-list>
+        <welcome-file>student-form.html</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>HelloWorldServlet</servlet-name>
+        <servlet-class>com.icfnext.servlet.servletdemo.HelloWorldServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>StudentServlet</servlet-name>
+        <servlet-class>com.icfnext.servlet.servletdemo.StudentServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>StudentView</servlet-name>
+        <servlet-class>com.icfnext.servlet.servletdemo.StudentView</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MvcDemoServlet</servlet-name>
+        <servlet-class>com.icfnext.mvc.MvcDemoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloWorldServlet</servlet-name>
+        <url-pattern>/HelloWorldServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StudentServlet</servlet-name>
+        <url-pattern>/StudentServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StudentView</servlet-name>
+        <url-pattern>/StudentView</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MvcDemoServlet</servlet-name>
+        <url-pattern>/MvcDemoServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
